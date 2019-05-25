@@ -9,7 +9,7 @@ maintaining support for newer Gerrit/Git releases and improving test
 coverage are welcome and encouraged. It is not, however, intended as
 an all-encompassing Gerrit client (there are plenty of other tools
 available supporting more advanced interactions), so proposed
-feature additions may make more sense implemented as complimentary
+feature additions may make more sense implemented as complementary
 ``git`` subcommands or similar related but separate projects.
 
 To get the latest code, see: https://git.openstack.org/cgit/openstack-infra/git-review
