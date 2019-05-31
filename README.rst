@@ -9,4 +9,4 @@ review.
 * Free software: Apache license
 * Documentation: http://docs.openstack.org/infra/git-review/
 * Source: https://git.openstack.org/cgit/openstack-infra/git-review
-* Bugs: https://storyboard.openstack.org/#!/project/719
+* Bugs: https://storyboard.openstack.org/#!/project/opendev/git-review
