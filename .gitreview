@@ -1,4 +1,4 @@
 [gerrit]
 host=review.opendev.org
 port=29418
-project=openstack/git-review.git
+project=opendev/git-review.git
