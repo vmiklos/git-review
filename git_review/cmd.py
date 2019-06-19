@@ -1643,7 +1643,8 @@ def _main():
         if options.custom_script:
             run_custom_script("draft")
 
-    cmd = "git push %s HEAD:refs/%s/%s" % (remote, ref, branch)
+    cmd = ("git push --no-follow-tags %s HEAD:refs/%s/%s" %
+           (remote, ref, branch))
     push_options = []
     if options.topic is not None:
         topic = options.topic
