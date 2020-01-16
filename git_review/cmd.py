@@ -1413,6 +1413,9 @@ def _main():
                         action="store_true",
                         help="Use remote push-url logic instead of separate"
                              " remotes")
+    parser.add_argument("--notify", dest="notify",
+                        help="Control to whom email notifications are sent,"
+                             " e.g. OWNER")
 
     rebase_group = parser.add_mutually_exclusive_group()
     rebase_group.add_argument("-R", "--no-rebase", dest="rebase",
@@ -1680,6 +1683,9 @@ def _main():
 
     if options.remove_private:
         push_options.append('remove-private')
+
+    if options.notify is not None:
+        push_options.append("notify=%s" % options.notify)
 
     if push_options:
         cmd += "%" + ",".join(push_options)
